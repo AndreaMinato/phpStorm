@@ -1,0 +1,29 @@
+.container{
+    background-color: #46b8da;
+    box-shadow: black 0px 0 5px 5px;
+    min-height: 100%;
+}
+#txtInsert{
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    resize: vertical;
+    background-color: #46b8da;
+    box-shadow: black 0px 0 2px 2px;
+}
+#caratteri{
+    margin-top: 0.5em;
+    box-shadow: black 0px 0 2px 2px;
+}
+.row{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#result{
+    box-shadow: black 0px 0 2px 2px;
+    min-height: 5em;
+    overflow: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}

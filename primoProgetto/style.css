@@ -1,0 +1,16 @@
+body{
+    padding-top: 2em;
+}
+
+.btn{
+    width: 100%;
+    height: 100%;
+    background-color: #66afe9;
+}
+
+#res{
+    text-align: right;
+    color: white;
+    height: 2.8em;
+    background-color: darkcyan;
+}
