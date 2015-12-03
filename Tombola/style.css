@@ -1,0 +1,23 @@
+.tab {
+    border: solid 1px black;
+    height: 90px;
+    width: 150px;
+}
+
+.estratto {
+    background-color: #0b3e6f;
+    color: white;
+    text-align: center;
+    font: bold;
+    padding-top: 0.2em;
+    font-size: 50px;
+
+}
+
+#estratto {
+    text-align: center;
+    padding-top: 0.2em;
+    height: 2em;
+    width: 15em;
+    font-size: 5em;
+}

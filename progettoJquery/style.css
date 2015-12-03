@@ -1,0 +1,23 @@
+.cas{
+    border: solid 1px black;
+    height: 12em;
+    background-color: #9d9d9d;
+}
+.cas:hover{
+    background-color: #555555;
+}
+
+.circle{
+    background: url('http://logok.org/wp-content/uploads/2014/07/Playstation-logo-colour.png') no-repeat ;
+    background-size: contain;
+}
+
+.cross{
+    background: url('http://logok.org/wp-content/uploads/2014/12/Xbox-logo-880x660.png') no-repeat;
+    background-size: contain;
+}
+
+.btn{
+    margin-top: 2em;
+    width: 100%;
+}
