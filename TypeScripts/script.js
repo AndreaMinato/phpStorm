@@ -19,7 +19,7 @@ $('#chiudiPopup').on('click', function(){
 
     }
     else{
-        pop.
+       // pop.
     }
     window.setTimeout("varia()",1000)
 })
