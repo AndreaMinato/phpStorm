@@ -5,7 +5,7 @@ var num;
 var x;
 var celle = [];
 var numeri = [];
-var extract = $('#estratto');
+var extract = $('#estratt');
 for (var i = 1; i < 91; i++) {
     celle[i] = $('#c' + i);
 }
@@ -18,7 +18,7 @@ function estrai() {
         x = Math.round((numeri.length - 1) * Math.random());
         num = numeri[x];
         numeri.splice(x, 1);
-        extract.text(num + " Estrai di nuovo");
+        extract.html(num + " Estrai di nuovo");
         celle[num].addClass('estratto');
     }
     else{
