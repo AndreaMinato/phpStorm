@@ -1,0 +1,32 @@
+<h1>Home</h1>
+
+<h3>{{message}}</h3>
+
+<br/>
+
+
+
+<table class="table table-hover table-responsive">
+   <!-- <tr>
+        <td>From:
+            <input ng-model="dateFrom" type="text"/>
+
+        </td>
+        <td>To:
+            <input ng-model="dateTo" type="text"/>
+        </td>
+    </tr>
+-->
+    <thead>
+        <th>Ubicazione</th>
+        <th>Dettaglio</th>
+    </thead>
+    <tr ng-repeat="n in list | myfilter:dateFrom:dateTo">
+        <td>{{n.properties.place}}</td>
+        <!--<td>{{n.category}}</td>
+        <td>{{n.price}} &euro;</td>-->
+        <td><a ui-sref="details({id:n.id})"><span class="glyphicon glyphicon-eye-open"</a></td>
+        <!--<td><a ui-sref="edit({id:n.id})"><span class="glyphicon glyphicon-edit"</a></td>-->
+        <!--<td><a ng-click="canc(n.id)"><span class="glyphicon glyphicon-trash"</a></td>-->
+    </tr>
+</table>

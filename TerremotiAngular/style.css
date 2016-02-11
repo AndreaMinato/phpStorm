@@ -1,0 +1,12 @@
+html, body{
+    height: 100%;
+}
+
+.grande{
+    min-heigh: 100%    ;
+    box-shadow: 0 0 3px 1px black;
+}
+
+h1, h3{
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+<h1>I miei fottuti messaggi</h1>
+
+
+<div class="row">
+    <div class="col-xs-6">
+        <div class="mytable publ">
+            <h3>Broadcast</h3>
+            <table class="table table-hover table-responsive">
+                <thead>
+                <th>Mittente</th>
+                <th>Messaggio</th>
+                <th>Ora</th>
+                </thead>
+                <tr ng-repeat="m in messages">
+                    <td>{{m.mitt}}</td>
+                    <td ng-bind="m.mess"></td>
+                    <td>{{m.when| date:'HH:mm:ss'}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="mytable priv">
+            <h3>Privati</h3>
+            <table class="table table-hover table-responsive">
+                <thead>
+                <th>Mittente</th>
+                <th>Messaggio</th>
+                <th>Ora</th>
+                </thead>
+                <tr ng-repeat="m in private">
+                    <td>{{m.mitt}}</td>
+                    <td ng-bind="m.mess"></td>
+                    <td>{{m.when| date:'HH:mm:ss'}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-offset-4 col-xs-4">
+        <label for="msg">Testo messaggio</label>
+        <textarea id="msg" name="msg" ng-model="inviami"></textarea>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-offset-4 col-xs-2">
+
+        <div class="button btn-warning"
+             ng-click="inviaMessaggio()"><span class="glyphicon glyphicon-bullhorn"></span>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="button btn-success"
+                ng-click="inviaMessaggioPrivato()"><span class="glyphicon glyphicon-send"></span>
+        </div>
+
+    </div>
+
+
+
+
+</div>

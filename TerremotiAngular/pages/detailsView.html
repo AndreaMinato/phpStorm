@@ -1,0 +1,38 @@
+<h1>{{place}}</h1>
+
+<table class="table table-hover table-responsive">
+    <tr>
+        <td>Latitudine:</td>
+        <td>{{latitude}}</td>
+    </tr>
+    <tr>
+        <td>Longitudine::</td>
+        <td>{{longitude}}</td>
+    </tr>
+    <tr>
+        <td>Magnitudo:</td>
+        <td>{{mag}}</td>
+    </tr>
+    <tr>
+        <td>Altra cosa casuale:</td>
+        <td>{{type}}</td>
+    </tr>
+    <tr>
+        <td>Data:</td>
+        <td>{{date | date:'dd/MM/yyyy '}}</td>
+    </tr>
+
+    <tr>
+        <td>Ora:</td>
+        <td>{{date | date:'HH:mm:ss Z'}}</td>
+    </tr>
+</table>
+<!--
+<img width="600"
+     src="http://maps.googleapis.com/maps/api/staticmap?center={{place}},+NY&zoom=13&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true"
+     alt="Google Map of Albany, NY">
+-->
+
+
+
+

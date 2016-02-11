@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <script type="text/javascript"
+            src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript"
+            src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script type="text/javascript"
+            src="scripts/app.js"></script>
+
+    <script type="text/javascript"
+            src="pages/homeController.js"></script>
+    <script type="text/javascript"
+            src="pages/contactController.js"></script>
+    <script type="text/javascript"
+            src="pages/detailsController.js"></script>
+    <script type="text/javascript"
+            src="pages/editController.js"></script>
+    <script type="text/javascript"
+            src="pages/insertController.js"></script>
+</head>
+<body ng-app="myApp">
+<div class="container grande">
+    <div class="row">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav nav-tabs nav-justified">
+                    <li role="presentation"><a ui-sref="home"><span class="glyphicon glyphicon-home"></span> </a></li>
+                    <li role="presentation"><a ui-sref="contact"><span class="glyphicon glyphicon-book"></span> </a></li>
+                    <li role="presentation"><a ui-sref="insert"><span class="glyphicon glyphicon-plus"></span> </a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+
+    <div ui-view></div>
+</div>
+</body>
+</html>

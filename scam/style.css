@@ -1,8 +1,18 @@
+html, body{
+    height: 100%;
+}
+
+
 .container{
     box-shadow: #0f0f0f 0 0 4px 4px;
     background-color: white;
+    height: 100%;
+    overflow: auto;
 }
-body{
+
+html, body {
+    height: 100%;
+    margin: 0;
     background-color: #74b2e2;
 }
 #login {
@@ -20,4 +30,8 @@ body{
     background-size: 20%;
     margin-top: 2em;
     opacity: .5;
+}
+
+.btn{
+    padding: 0.5em;
 }

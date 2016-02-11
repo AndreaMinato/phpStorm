@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/base/all.css"/>
+    <link rel="stylesheet" type="text/css" href="animate.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Contattaci</title>
+
+
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Contattaci</h1>
+        </div>
+    </div>
+    <div class="row">
+        <nav class="navbar navbar-default collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="BookFlight.html">Prenota Volo</a></li>
+                <li><a href="Contact.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row insert">
+        <div class="col-md-offset-4 col-md-2">
+            <label for="e-mail">Email</label>
+        </div>
+        <div class="col-md-2">
+            <input type="email" id="e-mail" onkeyup="vedi()"/>
+        </div>
+    </div>
+    <div class="row insert">
+        <div class="col-md-offset-4 col-md-2">
+            <label for="oggetto">Oggetto</label>
+        </div>
+        <div class="col-md-2">
+            <input type="text" id="oggetto" onkeyup="vedi()"/>
+        </div>
+    </div>
+    <div class="row insert">
+        <div class="col-md-offset-4 col-md-2">
+            <label for="testo">Scrivi qui</label>
+        </div>
+        <div class="col-md-2">
+            <textarea id="testo" rows="10" onkeyup="vedi()"></textarea>
+        </div>
+    </div>
+    <div class="row insert">
+        <div class="col-md-offset-4 col-md-4">
+            <button type="button" class="btn btn-block" id="invia">Invia</button>
+        </div>
+    </div>
+</div>
+
+<footer class="foot">Andrea Minato</footer>
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

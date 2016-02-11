@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #DADADA;
+    background-image: url("images/img.png");
+}
+
+h1, h3{
+    text-align: center;
+    font-family: Georgia, Verdana, Arial, sans-serif;
+    font-style: italic;
+}
+
+.menu{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+    padding: 1em 0 4em 0;
+    background-color: #337ab7;
+    height: 7em;
+
+}
+
+
+.news{
+    font-size: 1.3em;
+    max-width: 19em;
+    height: 30em;
+    padding: 0.7em;
+    margin: 1em 0.8em 0 0.8em;
+    background-color: #337ab7;
+    overflow-y: auto;
+}
+
+.item{
+    color: #0b3e6f;
+    border-left: double;
+    padding-left: 0.5em;
+}
+.item:hover{
+    font-size: 1.2em;
+    color: #0b3e6f;
+}
+
+.container{
+    box-shadow: 0 0 3px 3px black;
+    height: 100%;
+    overflow: auto;
+    background-color: #2255aa;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.nascosto{
+    display: none;
+    opacity: 0;
+}
+
+.guardami{
+    display: block;
+    opacity: 100;
+}
+
+
+.mybtn{
+    border: solid black;
+    border-radius: 100%;
+}
