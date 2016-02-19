@@ -1,37 +1,66 @@
-<h1>{{place}}</h1>
+<h1>{{titolo}}</h1>
 
-<table class="table table-hover table-responsive">
-    <tr>
-        <td>Latitudine:</td>
-        <td>{{latitude}}</td>
-    </tr>
-    <tr>
-        <td>Longitudine::</td>
-        <td>{{longitude}}</td>
-    </tr>
-    <tr>
-        <td>Magnitudo:</td>
-        <td>{{mag}}</td>
-    </tr>
-    <tr>
-        <td>Altra cosa casuale:</td>
-        <td>{{type}}</td>
-    </tr>
-    <tr>
-        <td>Data:</td>
-        <td>{{date | date:'dd/MM/yyyy '}}</td>
-    </tr>
+<div class="row">
+    <div class="col-md-8">
+        <table class="table table-hover table-responsive">
+            <tr>
+                <td colspan="2">{{trama}}</td>
+            </tr>
+            <tr>
+                <td>Anno:</td>
+                <td>{{anno}}</td>
+            </tr>
+            <tr>
+                <td>Data:</td>
+                <td>{{data}}</td>
+            </tr>
+            <tr>
+                <td>Durata:</td>
+                <td>{{durata}}</td>
+            </tr>
+            <tr>
+                <td>Genere:</td>
+                <td>{{genere}}</td>
+            </tr>
+            <tr>
+                <td>Direttore:</td>
+                <td>{{autore}}</td>
+            </tr>
 
-    <tr>
-        <td>Ora:</td>
-        <td>{{date | date:'HH:mm:ss Z'}}</td>
-    </tr>
-</table>
-<!--
-<img width="600"
-     src="http://maps.googleapis.com/maps/api/staticmap?center={{place}},+NY&zoom=13&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true"
-     alt="Google Map of Albany, NY">
--->
+            <tr>
+                <td>Lingua:</td>
+                <td>{{lingua}}</td>
+            </tr>
+            <tr>
+                <td>Attori:</td>
+                <td>{{attori}}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <div><img class="poster" ng-src={{poster}}></div>
+        <div class="row">
+
+            <!--   <div class="col-xs-6"> <uib-rating ng-model="vote1" max="max" readonly=true;
+                           aria-labelledby="default-rating"></uib-rating> </div> -->
+            <div class="col-xs-12"><h5>Il voto di metascore</h5></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1" ng-repeat="n in vota(vote1)"><span class="glyphicon glyphicon-heart"></span></div>
+
+        </div>
+        <div class="row">
+
+            <!--   <div class="col-xs-6"> <uib-rating ng-model="vote1" max="max" readonly=true;
+                           aria-labelledby="default-rating"></uib-rating> </div> -->
+            <div class="col-xs-12"><h5>Il nostro voto</h5></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1" ng-repeat="n in vota(vote2)"><span class="glyphicon glyphicon-heart"></span></div>
+
+        </div>
+    </div>
+</div>
 
 
 

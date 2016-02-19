@@ -2,18 +2,33 @@ angular.module('myApp')
     .controller('detailsController', function ($scope, $state, $http, $stateParams) {
         $http({
             method: 'GET',
-            url: 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/' + $stateParams.id + '.geojson'
+            url: 'http://www.omdbapi.com/?i=' + $stateParams.id + '&plot=full&r=json'
         }).then(function (resp) {
 
-            $scope.place = resp.data.properties.place;
-            $scope.mag = resp.data.properties.mag;
-            $scope.longitude = resp.data.properties.products.origin[0].properties.longitude;
-            $scope.latitude = resp.data.properties.products.origin[0].properties.latitude;
-            $scope.type = resp.data.properties.type;
-            $scope.date = resp.data.properties.time;
+            $scope.max = 10;
+
+            $scope.titolo = resp.data.Title;
+            $scope.anno = resp.data.Year;
+            $scope.data = resp.data.Released;
+            $scope.durata = resp.data.Runtime;
+            $scope.genere = resp.data.Genre;
+            $scope.autore = resp.data.Director;
+            $scope.lingua = resp.data.Language;
+            $scope.trama = resp.data.Plot;
+            $scope.poster = resp.data.Poster;
+            $scope.attori = resp.data.Actors;
+
+            $scope.vote1=Math.round(resp.data.Metascore/10);
+            $scope.vote2=Math.round(resp.data.imdbRating);
         }, function (resp) {
             console.log('non    presi');
         })
 
+        $scope.vota= function (x){
+            var array=[];
+            for(var i=0;i<x;i++)
+                array.push(i);
+            return array;
+        }
 
     });

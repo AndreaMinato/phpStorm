@@ -1,12 +1,31 @@
 html, body{
     height: 100%;
 }
-
 .grande{
-    min-heigh: 100%    ;
+    min-height: 100%;
     box-shadow: 0 0 3px 1px black;
 }
 
 h1, h3{
     text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.scomparsa{
+    display: none;
+}
+
+.comparsa{
+    display: block;
+}
+
+.home{
+    width: 5em;
+}
+
+.listTable{
+    font-size: large;
 }

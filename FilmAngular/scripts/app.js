@@ -39,7 +39,26 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
     ;
 });
 
+function check(){
+    var ch=$('#input');
+    var b=$('#mybtn');
+    if(ch.val().length>1){
+        b.addClass('btn-success');
+    }
+    else{
+        b.removeClass('btn-success');
+    }
+}
 
+function ok(){
+    var b=$('#mybtn');
+    var d=$('#contenuto');
+
+    if(b.hasClass('btn-success'))
+        d.addClass('comparsa');
+    else
+        d.removeClass('comparsa')
+}
 
 function data() {
     var temp = [
