@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-xs-12 mymenu">
+        <h1>{{person.surname}} {{person.name}}</h1>
+    </div>
+</div>
+
+
+<table class="table table-hover table-responsive">
+    <tr>
+        <td>Sesso:</td>
+        <td>{{person.sex}}</td>
+    </tr>
+    <tr>
+        <td>E-mail:</td>
+        <td>{{person.email}}</td>
+    </tr>
+    <tr>
+        <td>Telefono:</td>
+        <td>{{person.tel}}</td>
+    </tr>
+    <tr>
+        <td>Data di Nascita:</td>
+        <td>{{person.birthday | date:'dd/MM/yyyy '}}</td>
+    </tr>
+    <tr>
+        <td>Città di Nascita:</td>
+        <td>{{person.cityOfBirth}}</td>
+    </tr>
+    <tr>
+        <td>Indirizzo:</td>
+        <td>{{person.address}}, {{person.city}}</td>
+    </tr>
+    <tr>
+        <td>Telefono:</td>
+        <td>{{person.tel}}</td>
+    </tr>
+
+
+    <tr>
+        <td>Codice Fiscale:</td>
+        <td>{{person.fiscalCode}}</td>
+    </tr>
+</table>
+
+

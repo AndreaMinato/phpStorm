@@ -1,0 +1,43 @@
+<h1>Home </h1>
+
+
+<div class="row">
+    <div class="col-xs-12 mymenu">
+        <button
+                type="button"
+                ng-click="clearStorage()"
+                class="btn btn-info"><span class="glyphicon glyphicon-refresh mini"></span></button>
+    </div>
+</div>
+
+
+
+<table class="table table-hover table-responsive">
+    <thead>
+    <th>Nome</th>
+    <th>Cognome</th>
+    <th>Sesso</th>
+    <th>E-mail</th>
+    <th>Telefono</th>
+    <th>Data di Nascita</th>
+    <th>Codice Fiscale</th>
+    <th>Indirizzo</th>
+    <th>Dettaglio</th>
+    <th>Modifica</th>
+    <th>Elimina</th>
+    </thead>
+    <tr ng-repeat="n in list">
+        <td>{{n.name}}</td>
+        <td>{{n.surname}}</td>
+        <td>{{n.sex}}</td>
+        <td>{{n.email}}</td>
+        <td>{{n.tel}}</td>
+        <td>{{n.birthday | date:'dd/MM/yyyy'}}</td>
+        <td>{{n.fiscalCode}}</td>
+        <td>{{n.address}}, {{n.city}}</td>
+        <td><a ui-sref="details({id:n.id})"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        <td><a ui-sref="edit({id:n.id})"><span class="glyphicon glyphicon-edit"></span></a></td>
+        <td><a ng-click="canc(n.id)"><span class="glyphicon glyphicon-trash"></span></a></td>
+    </tr>
+</table>
+
